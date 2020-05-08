@@ -1,24 +1,31 @@
 import React from "react";
-import logo from "./images/logo.png";
 import "./App.css";
-
+import Builder from "./Builder";
+import Chat from "./Chat";
+import Explore from "./Explore";
+import Nav from "./Nav";
+import MyProfile from "./MyProfile";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>CAOCAP WEB-APP</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Empower To Become Powerful.
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Nav />
+        <Switch>
+          <Route exact path="/" component={Explore} />
+          <Route path="/Builder" component={Builder} />
+          <Route path="/Chat" component={Chat} />
+          <Route path="/MyProfile" component={MyProfile} />
+        </Switch>
+      </div>
+    </Router>
   );
 }
+
+const Home = () => (
+  <div>
+    <h1>Home page</h1>
+  </div>
+);
 
 export default App;
