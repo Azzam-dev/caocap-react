@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import Builder from "./Builder";
+import "./style.css";
 import Chat from "./Chat";
 import Explore from "./Explore";
 import Nav from "./Nav";
