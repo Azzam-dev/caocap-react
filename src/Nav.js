@@ -1,10 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./App.css";
+import logo from "./images/logo.png";
 function Nav() {
   return (
     <fieldset>
-      <legend>welcome</legend>
+      <nav>
+        <img src={logo} width="100px" />
+        <p>coacap</p>
+        <ul className="nav-links"></ul>
+        <input type="serch"></input>
+        <button>sign up</button>
+      </nav>
+      {/*
       <nav>
         <img src="https://caocap.app/images/logo.svg" width="100px" />
         <ul className="nav-links">
@@ -22,6 +30,7 @@ function Nav() {
           </li>
         </ul>
       </nav>
+        */}
     </fieldset>
   );
 }

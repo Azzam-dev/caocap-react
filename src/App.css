@@ -2,28 +2,65 @@
 code this file by Caocap team @salehalthini
 Copyrigth 2020 © All rigth Reserved
 */
+@font-face {
+  font-family: "earthorbiter";
+  src: url("fonts/earthorbiter.ttf");
+}
+@font-face {
+  font-family: "NeoSansArabic";
+  src: url("fonts/NeoSansArabic.ttf");
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: NeoSansArabic;
+}
+
 .App {
   text-align: center;
 }
-
+p {
+  font-size: 40px;
+  font-family: earthorbiter;
+}
 nav {
   display: flex;
   justify-content: space-around;
   align-items: left;
   min-height: 10vh;
-  background-color: rgb(71, 78, 80);
+  margin-top: 1px;
+  background-color: #292d39;
   color: white;
 }
-
+nav img {
+  margin-right: 12px;
+}
 .nav-links {
-  width: 90%;
+  width: 20%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   list-style: none;
   text-decoration: none;
 }
-
+nav button {
+  margin-top: 25px;
+  margin-right: 80px;
+  width: 120px;
+  color: white;
+  background-color: #00a6ff;
+  border: 1px solid #00a6ff;
+  border-radius: 12px;
+  height: 30px;
+}
+nav button:hover {
+  background-color: white;
+  color: #000;
+}
+nav input {
+  width: 30%;
+  height: 30%;
+}
 ul,
 li,
 Link {
