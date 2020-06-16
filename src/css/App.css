@@ -4,11 +4,11 @@ Copyrigth 2020 © All rigth Reserved
 */
 @font-face {
   font-family: "earthorbiter";
-  src: url("fonts/earthorbiter.ttf");
+  src: url("../fonts/earthorbiter.ttf");
 }
 @font-face {
   font-family: "NeoSansArabic";
-  src: url("fonts/NeoSansArabic.ttf");
+  src: url("../fonts/NeoSansArabic.ttf");
 }
 * {
   padding: 0;
@@ -22,18 +22,22 @@ Copyrigth 2020 © All rigth Reserved
 p {
   font-size: 40px;
   font-family: earthorbiter;
+  margin: auto 8px auto 0;
 }
 nav {
   display: flex;
   justify-content: space-around;
   align-items: left;
   min-height: 10vh;
+  max-height: 10vh;
   margin-top: 1px;
   background-color: #292d39;
   color: white;
 }
 nav img {
-  margin-right: 12px;
+  margin: auto 8px auto 50px;
+  width: 50px;
+  height: 50px;
 }
 .nav-links {
   width: 20%;
@@ -44,8 +48,7 @@ nav img {
   text-decoration: none;
 }
 nav button {
-  margin-top: 25px;
-  margin-right: 80px;
+  margin: auto 0 auto 0;
   width: 120px;
   color: white;
   background-color: #00a6ff;
@@ -58,8 +61,14 @@ nav button:hover {
   color: #000;
 }
 nav input {
-  width: 30%;
+  width: 20%;
   height: 30%;
+  border-radius: 10px;
+  padding: 3px;
+  margin-right: 20%;
+  margin-top: 30px;
+  background-color: #181c28;
+  color: white;
 }
 ul,
 li,

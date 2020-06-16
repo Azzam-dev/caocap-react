@@ -35,18 +35,3 @@ a {
   text-decoration: none;
   color: white;
 }
-
-fieldset {
-  background-color: #6f42c1;
-  width: 100%;
-  border-radius: 10px;
-  border: 1px solid #ccc;
-  padding: 1px;
-  margin-bottom: 20px;
-}
-legend {
-  background-color: rgb(138, 125, 125);
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-}

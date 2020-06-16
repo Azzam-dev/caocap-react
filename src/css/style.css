@@ -8,7 +8,7 @@ Copyrigth 2020 © All rigth Reserved
     format("woff");
 }
 body {
-  background: url(http://subtlepatterns.com/patterns/scribble_light.png);
+  background-color: #181c28;
   font-family: Calluna, Arial, sans-serif;
   min-height: 1000px;
 }
