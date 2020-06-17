@@ -1,6 +1,8 @@
 import React from "react";
 import Caocap from "./components/Caocap";
 function ExplorePage() {
+
+
   return (
     <div className="columns">
       <Caocap caocapUrl="https://carecards.io/cards" />

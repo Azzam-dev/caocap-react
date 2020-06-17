@@ -8,6 +8,7 @@ function Nav() {
       <img src={logo} width="100px" />
       <p>coacap</p>
       <ul className="nav-links"></ul>
+      <ul className="nav-down"></ul>
       <input type="search" placeholder="Search ...."></input>
       <button id="signup">sign up</button>
       <button id="signin">sign in</button>
