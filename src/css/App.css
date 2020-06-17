@@ -10,6 +10,7 @@ Copyrigth 2020 © All rigth Reserved
   font-family: "NeoSansArabic";
   src: url("../fonts/NeoSansArabic.ttf");
 }
+
 * {
   padding: 0;
   margin: 0;
@@ -56,10 +57,19 @@ nav button {
   border-radius: 12px;
   height: 30px;
 }
-nav button:hover {
+#signup:hover,#signin:hover {
   background-color: white;
+  border: none;
   color: #000;
 }
+#signin
+{
+  background-color: rgba(0, 0, 0, 0);
+  border:2px solid #00a6ff;
+  margin-right: 50px;
+
+}
+
 nav input {
   width: 20%;
   height: 30%;
@@ -75,3 +85,4 @@ li,
 Link {
   text-decoration: none;
 }
+

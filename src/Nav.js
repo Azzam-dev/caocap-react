@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./css/App.css";
-import Search from "./Search";
 import logo from "./images/logo-100.png";
 function Nav() {
   return (
@@ -10,8 +9,8 @@ function Nav() {
       <p>coacap</p>
       <ul className="nav-links"></ul>
       <input type="search" placeholder="Search ...."></input>
-      <button>sign up</button>
-      <button>sign in</button>
+      <button id="signup">sign up</button>
+      <button id="signin">sign in</button>
     </nav>
   );
 }

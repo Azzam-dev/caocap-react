@@ -10,6 +10,9 @@ function ExplorePage() {
       <Caocap caocapUrl="https://weather.iondrimbafilho.me/" />
       <Caocap caocapUrl="https://offline-dino-game.firebaseapp.com" />
       <Caocap caocapUrl="https://maxwellito.github.io/breaklock" />
+      <Caocap caocapUrl="https://weather.iondrimbafilho.me/" />
+      <Caocap caocapUrl="https://offline-dino-game.firebaseapp.com" />
+      <Caocap caocapUrl="https://maxwellito.github.io/breaklock" />
     </div>
   );
 }
