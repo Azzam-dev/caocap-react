@@ -4,19 +4,24 @@ import Builder from "./Builder";
 import Chat from "./Chat";
 import Explore from "./Explore";
 import Nav from "./Nav";
+import { AuthProvider } from "./context/authContext"
 import MyProfile from "./MyProfile";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Login from "./components/Login";
 function App() {
   return (
     <Router>
       <div className="App">
         <Nav />
+        <AuthProvider>
         <Switch>
           <Route exact path="/" component={Explore} />
           <Route path="/Builder" component={Builder} />
+          <Route path="/login" component={Login} />
           <Route path="/Chat" component={Chat} />
           <Route path="/MyProfile" component={MyProfile} />
         </Switch>
+        </AuthProvider>
       </div>
     </Router>
   );

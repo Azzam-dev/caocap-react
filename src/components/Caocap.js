@@ -1,12 +1,13 @@
 import React from "react";
 import "../css/style.css";
-function Caocap(props) {
+
+function Caocap({props}) {
   return (
     <div id="columns">
       <figure>
         <iframe
           height="550"
-          src={props.caocapUrl}
+          src={props.link}
           rel="nofollow"
           width="100%"
         ></iframe>

@@ -1,20 +1,28 @@
-import React from "react";
+import React, { useState ,useEffect} from "react";
 import Caocap from "./components/Caocap";
+import {database} from "./firebase"
 function ExplorePage() {
 
+  const [CaocapList,setCaocapList] = useState();
+  useEffect(() => {
+    
+    const caocaps =  database.ref("caocap").limitToLast(30);
+      const caocaplist = [];
+      caocaps.on('value',(snapshot)=>{
+          const valuee = snapshot.val();
+          for(let id in valuee){caocaplist.push(valuee[id]);}
+          setCaocapList(caocaplist);
+      })
 
+      
+
+  },[]);
+  
   return (
     <div className="columns">
-      <Caocap caocapUrl="https://carecards.io/cards" />
-      <Caocap caocapUrl="https://calculator-game-reactjs.now.sh/" />
-      <Caocap caocapUrl="https://bsehovac.github.io/the-cube/" />
-      <Caocap caocapUrl="https://calculator.iondrimbafilho.me" />
-      <Caocap caocapUrl="https://weather.iondrimbafilho.me/" />
-      <Caocap caocapUrl="https://offline-dino-game.firebaseapp.com" />
-      <Caocap caocapUrl="https://maxwellito.github.io/breaklock" />
-      <Caocap caocapUrl="https://weather.iondrimbafilho.me/" />
-      <Caocap caocapUrl="https://offline-dino-game.firebaseapp.com" />
-      <Caocap caocapUrl="https://maxwellito.github.io/breaklock" />
+
+        {CaocapList ? CaocapList.map((value,index) => <Caocap props={value} key = {index} />):""}
+
     </div>
   );
 }
