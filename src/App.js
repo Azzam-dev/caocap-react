@@ -9,7 +9,7 @@ import MyProfile from "./MyProfile";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Login from "./components/Login";
 import NewLogin from "./components/NewLogin";
-
+import SignUp from "./components/SignUp"
 function App() {
   return (
     <Router>
@@ -23,6 +23,7 @@ function App() {
           <Route path="/Chat" component={Chat} />
           <Route path="/MyProfile" component={MyProfile} />
           <Route path="/NewLogin" component={NewLogin} />
+          <Route path="/signup" component={SignUp} />
         </Switch>
         </AuthProvider>
       </div>

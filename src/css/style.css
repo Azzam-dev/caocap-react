@@ -96,7 +96,7 @@ div#columns:hover figure:not(:hover) {
   form .field input:valid{
 	border-color:#00C5FF;
   }
-  .wrapper form .field label{
+  /* .wrapper form .field label{
 	position:absolute;
 	top:50%;
 	left:20px;
@@ -105,12 +105,12 @@ div#columns:hover figure:not(:hover) {
 	font-size: 17px;
 	pointer-events: none;
 	transform:translateY(-50%);
-  }
-  form .field input:focus ~ label,
+  } */
+  /* form .field input:focus ~ label,
   form .field input:valid ~ label{
 	visibility: hidden;
 	font-size: 16px;
-  }
+  } */
   form .content{
 	display:flex;
 	width:100%;
@@ -175,4 +175,18 @@ div#columns:hover figure:not(:hover) {
 	color: white;
 	padding-bottom: 30px;
 	background-color:#00C5FF ;
+}
+
+
+.field ::placeholder {
+	font-size: 16px;
+	font-weight: 400;
+	position:absolute;
+	top:50%;
+	left:20px;
+	color:#999;
+	font-weight: 400;
+	font-size: 17px;
+	pointer-events: none;
+	transform:translateY(-50%);
 }

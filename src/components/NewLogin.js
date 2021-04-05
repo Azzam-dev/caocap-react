@@ -33,13 +33,11 @@ function NewLogin() {
         <form onSubmit={handleSubmit}>
 
         <div class="field">
-        <input type="email" ref={emailRef} required />
-        <label>Email Address</label>
+        <input type="email" placeholder="Email Address" ref={emailRef} required />
         </div>
 
         <div class="field">
-        <input type="password" ref={passwordRef} required />
-        <label>Password</label>
+        <input placeholder="Password" type="password" ref={passwordRef} required />
         </div>
 
         <div class="field">
