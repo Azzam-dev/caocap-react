@@ -3,15 +3,14 @@ import "firebase/auth"
 import "firebase/database"
 
 const app = firebase.initializeApp({
-    apiKey: process.env.REACT_APP_API_KEY ,
-    authDomain: process.env.REACT_APP_AUTH_DOMAIN,
-    databaseURL:process.env.REACT_APP_DATABASE_URL,
-    projectId: process.env.REACT_APP_PROJECT_ID,
-    storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
-    messagingSenderId: process.env.REACT_APP_MASSAGING_SENDER_ID,
-    appId: process.env.REACT_APP_ID,
-    measurementId: process.env.REACT_APP_MEASUREMENT_ID
-
+    apiKey: "AIzaSyC9ZU1xBfFM4xjRx_Wfw_k7U55ixbwUjHM",
+    authDomain: "caocap-x.firebaseapp.com",
+    databaseURL: "https://caocap-x.firebaseio.com",
+    projectId: "caocap-x",
+    storageBucket: "caocap-x.appspot.com",
+    messagingSenderId: "358799497477",
+    appId: "1:358799497477:web:2dbb1bb504ecbf98277f6c",
+    measurementId: "G-1484L9L8E6"
 
 });
 export const database = app.database()
