@@ -3,16 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.11.3",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "autoresponsive-react": "^1.1.31",
     "bootstrap": "^4.6.0",
     "firebase": "^8.3.2",
+    "jquery": "^3.6.0",
     "react": "^16.13.1",
     "react-bootstrap": "^1.5.2",
     "react-dom": "^16.13.1",
+    "react-jquery-plugin": "^1.1.7",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "^4.0.3"
+    "react-scripts": "^4.0.3",
+    "react-stack-grid": "^0.7.1",
+    "react-stonecutter": "^0.3.10"
   },
   "scripts": {
     "start": "react-scripts start",

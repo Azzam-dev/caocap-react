@@ -31,7 +31,9 @@ div#columns figure {
   display: inline-block;
   column-break-inside: avoid;
 }
-
+.grid-container {
+  display: grid;
+}
 
 
 

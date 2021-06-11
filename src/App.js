@@ -27,10 +27,10 @@ function App() {
   );
 }
 
-const Home = () => (
-  <div>
-    <h1>Home page</h1>
-  </div>
-);
+// const Home = () => (
+//   <div>
+//     <h1>Home page</h1>
+//   </div>
+// );
 
 export default App;

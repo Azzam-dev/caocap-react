@@ -1,19 +1,43 @@
 import React from "react";
 import "../css/style.css";
+import $ from "jquery";
 
-function Caocap({props}) {
+import { makeStyles } from '@material-ui/core/styles';
+import paper from '@material-ui/core/Paper';
+
+function Caocap({props , type,key}) {
+  
+  const useStyles = makeStyles((theme) => ({
+    root: {
+      flexGrow: 1,
+      
+    },
+    paper: {
+      padding: theme.spacing(1),
+     // textAlign: 'center',
+      color: theme.palette.text.secondary,
+      width: 300
+    },
+  }));
+
   return (
-    <div id="columns">
-      <figure>
-        <iframe
-          height="550"
-          src={props.link}
-          rel="nofollow"
-          width="100%"
-        ></iframe>
-      </figure>
-    </div>
+      
+    <figure>
+      <iframe title="gg"
+    height="450"
+    width="100%"
+    referrerpolicy="no-referrer"
+    sandbox="allow-scripts"
+    src={props.link}
+    style = {{ border: "none;" ,padding:"1"}}
+    >
+      </iframe>
+    </figure>
+  
   );
+
+ 
+ 
 }
 
 export default Caocap;

@@ -1,3 +1,4 @@
+ import "../css/App.css";
 import React, { useRef ,useState} from "react"
 import { Card, Form, Button,Alert } from "react-bootstrap"
 import {useAuth} from "../context/authContext"
@@ -21,9 +22,9 @@ export default function Login() {
     }
 
     return (
-        <>
-            <Card>
-                <Card.Body>
+        < div>
+            <Card id="authCard"  >
+                <Card.Body   >
                     <h2 className="text-center mb=4"> Login </h2>
                     {error && <Alert variant = 'danger'>{error}</Alert>}
                     <Form onSubmit={handleSubmit}>
@@ -38,11 +39,13 @@ export default function Login() {
                        
                         <Button disabled={loading} className="w-100" type="submit"> Login </Button>
 
+                        
+
                     </Form>
                 </Card.Body>  
 
         </Card>
-        </>
+        </div>
         
         
         )

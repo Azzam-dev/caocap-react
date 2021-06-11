@@ -5,13 +5,14 @@ import logo from "./images/logo-100.png";
 function Nav() {
   return (
     <nav>
-      <img src={logo} width="100px" />
+      <img alt="logo" src={logo} width="100px" />
       <p>coacap</p>
       <ul className="nav-links"></ul>
       <ul className="nav-down"></ul>
       <input type="search" placeholder="Search ...."></input>
-      <button id="signup">sign up</button>
-      <button id="signin">sign in</button>
+      <button id="signup">signup</button>
+      <button id="login"><Link to="/login" > login </Link></button>
+      
     </nav>
   );
 }
